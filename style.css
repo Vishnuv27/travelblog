@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(185, 141, 75) !important;
+    padding: 20px !important;
+    color:rgb(185, 141, 75)!important;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: center !important;
+}
+
+nav ul li{
+    list-style: none;
+    justify-content: center !important;
+}
+
+nav ul li a{
+text-decoration: none;
+color: black;
+margin: 10px;
+justify-content: center !important;
+}
+nav img{
+    height: 100px;
+    width: 120px;
+}
+
+h2{
+    font-family: 'Libre Baskerville', serif !important;
+    color: rgb(155, 117, 67) !important;
+}
+
+/* imagecard */
+  .card1 {
+    position: absolute;
+    left: 530px;
+    border-radius: 15px;
+    height: 300px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+  .bio {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+  }
+  .img-card1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+  }
+  .img-card1:hover {
+    transform: scale(1.5);
+    transition: 0.5s all ease-in-out;
+    filter: grayscale(1%);
+  }
+  .img-card1:hover ~ .bio {
+    opacity: 1;
+    transition: 0.5s all ease-in-out;
+  }
+
+
+  h3{
+    color: rgb(182, 107, 15) !important;
+    font-family: sans-serif;
+  }
+  h4{
+    color: rgb(182, 105, 12) !important;
+    text-align: center !important;
+    font-family: monospace !important;
+  }
+  body{
+    background-color: rgb(217, 113, 243) !important;
+  }
+  
+
+
+  /* mediaquery */
+
+  @media screen and (max-width:400px){
+
+   *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    nav{
+      width: 500px;
+      margin: 0;
+      padding: 0;
+  }
+
+  .carouselExampleIndicators{
+    width: 500px;
+  }
+
+
+  
+  }
